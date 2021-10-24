@@ -1,5 +1,5 @@
 .Error {
     text-align: center;
-    color: #FF9AA2;
+    color: var(--error-color);
     font-size: 48px;
 }

@@ -22,7 +22,7 @@ const UsersList: React.FC<Props> = ({ searchValue }) => {
   }, []);
 
   function getList() {
-    return users.reduce<ReactElement[]>((aggr, { name, username }, index) => {
+    const filteredUsers =  users.reduce<ReactElement[]>((aggr, { name, username }, index) => {
       if (name.toLowerCase().includes(searchValue.toLowerCase())) {
         aggr.push(
           <div className="UsersList__item">
@@ -35,6 +35,12 @@ const UsersList: React.FC<Props> = ({ searchValue }) => {
 
       return aggr;
     }, []);
+
+    if (!filteredUsers.length) {
+      return <div className="UsersList__empty">No users found :(</div>
+    }
+
+    return filteredUsers;
   }
 
   if (error) {
