@@ -1,0 +1,25 @@
+.UsersList {
+    height: 40vh; /* assigning height keeps the layout from shifting */
+    min-width: 40vw; /* assigning width keeps the layout from shifting */
+    margin: 8px;
+}
+
+.UsersList__items {
+
+}
+
+.UsersList__item {
+    font-size: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #FFCACB; /* border to visually center the content even if the user names are shorter */
+}
+
+.UsersList__number {
+    padding-right: 4px;
+    color: var(--font-color-secondary);
+}
+
+.UsersList__tag {
+    color: var(--font-color-secondary);
+    padding-left: 8px;
+}

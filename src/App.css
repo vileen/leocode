@@ -1,0 +1,22 @@
+:root {
+  --border-color: #FFDAC1;
+  --font-color-primary: #363742;
+  --font-color-secondary: #6D77A9;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:  100vh;
+  background-color: #FFF4EC;
+  font-family: monospace;
+  color: var(--font-color-primary);
+}
+
+.App__title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
