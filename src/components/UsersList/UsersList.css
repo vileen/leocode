@@ -3,8 +3,7 @@
 }
 
 .UsersList {
-    height: calc(10 * var(--item-height));
-    overflow: auto; /* in case  */
+    overflow: auto; /* in case the content is longer  */
     counter-reset: user-counter;
 }
 

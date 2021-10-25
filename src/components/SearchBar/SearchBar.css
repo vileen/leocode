@@ -3,8 +3,6 @@
     outline: var(--border-color-transparent) solid 3px;
     border-radius: 3px;
     font-size: 16px;
-    padding: calc(var(--spacer) / 2);
-    min-width: 300px;
     transition: outline 0.4s ease-in-out;
 }
 
