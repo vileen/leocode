@@ -27,7 +27,7 @@ const UsersList: React.FC<Props> = ({ className, searchValue }) => {
         setUsers(result);
         setStatus(Status.Empty);
       })
-      .catch((err) => {
+      .catch(() => {
         setStatus(Status.Error);
       })
   }, []);
