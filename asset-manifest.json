@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/leocode/static/css/main.a122731d.chunk.css",
-    "main.js": "/leocode/static/js/main.1d4caae8.chunk.js",
-    "main.js.map": "/leocode/static/js/main.1d4caae8.chunk.js.map",
+    "main.js": "/leocode/static/js/main.15bff7c2.chunk.js",
+    "main.js.map": "/leocode/static/js/main.15bff7c2.chunk.js.map",
     "runtime-main.js": "/leocode/static/js/runtime-main.9cca9857.js",
     "runtime-main.js.map": "/leocode/static/js/runtime-main.9cca9857.js.map",
     "static/css/2.0cdc7206.chunk.css": "/leocode/static/css/2.0cdc7206.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.0cdc7206.chunk.css",
     "static/js/2.6266bb69.chunk.js",
     "static/css/main.a122731d.chunk.css",
-    "static/js/main.1d4caae8.chunk.js"
+    "static/js/main.15bff7c2.chunk.js"
   ]
 }
