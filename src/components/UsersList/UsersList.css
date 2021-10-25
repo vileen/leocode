@@ -11,7 +11,7 @@
 .UsersList__empty, .UsersList__error {
     text-align: center;
     color: var(--error-color);
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .UsersList__loading {
@@ -42,6 +42,5 @@
 
 .UsersList__tag {
     color: var(--font-color-secondary);
-    /* padding-left: var(--spacer); */
     margin-left: auto;
 }
