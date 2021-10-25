@@ -1,26 +1,47 @@
-.UsersList {
-    height: 40vh; /* assigning height keeps the layout from shifting */
-    min-width: 40vw; /* assigning width keeps the layout from shifting */
-    margin: 8px;
-    font-size: 16px;
+.UsersList, .UsersList__empty, .UsersList__error, .UsersList__loading {
+    height: calc(10 * var(--item-height)); /* assigning height keeps the layout from shifting */
 }
 
-.UsersList__empty {
+.UsersList {
+    height: calc(10 * var(--item-height));
+    overflow: auto; /* in case  */
+    counter-reset: user-counter;
+}
+
+.UsersList__empty, .UsersList__error {
     text-align: center;
     color: var(--error-color);
+    font-size: 32px;
+}
+
+.UsersList__loading {
+    text-align: center;
 }
 
 .UsersList__item {
-    margin-bottom: 8px;
-    border-bottom: 1px solid #FFCACB; /* border to visually center the content even if the user names are shorter */
+    display: flex;
+    border-bottom: 1px solid var(--underline-color); /* border to visually center the content even if the user names are shorter */
+    height: var(--item-height);
+    counter-increment: user-counter;
+    align-items: flex-end;
 }
 
-.UsersList__number {
-    padding-right: 4px;
+.UsersList__item::before {
+    width: calc(var(--spacer) * 6); /* enough space to keep 3 numbers */
+    content: counter(user-counter) '.' ;
+    padding-right: calc(var(--spacer) * 2);
     color: var(--font-color-secondary);
+}
+
+.UsersList__name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .UsersList__tag {
     color: var(--font-color-secondary);
-    padding-left: 8px;
+    /* padding-left: var(--spacer); */
+    margin-left: auto;
 }

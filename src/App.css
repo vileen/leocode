@@ -1,23 +1,41 @@
+@import url(~sanitize.css);
+
 :root {
+  --bg-color: #FFF4EC;
   --border-color: #FFDAC1;
+  --border-color-transparent: #ffdac100;
+  --underline-color: #FFCACB;
   --error-color: #FF9AA2;
   --font-color-primary: #363742;
   --font-color-secondary: #6D77A9;
+
+  --spacer: 8px;
+  --item-height: 40px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  font-family: monospace;
+  font-size: 16px;
+  color: var(--font-color-primary);
+  align-items: center;
+}
+
+/* treat App as a wrapper to position the users list while keeping it flexible */
 .App {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height:  100vh;
-  background-color: #FFF4EC;
-  font-family: monospace;
-  color: var(--font-color-primary);
+  align-items: stretch; /* make items stretch to take the full width so the content won't jump on filter */
+  height: 100vh;
+  width: 500px;
 }
 
 .App__title {
   font-size: 24px;
   font-weight: bold;
-  padding-bottom: 8px;
+  padding-bottom: calc(var(--spacer) * 2);
+  text-align: center;
 }
