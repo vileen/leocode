@@ -3347,6 +3347,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://artifacts.radarservices.net:443/api/npm/mirror-npmjs.org-npm/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha1-38+jiR4wbsHa0QXQ6I9EF7hTXo4=
+
 clean-css@^4.2.3:
   version "4.2.4"
   resolved "https://artifacts.radarservices.net:443/api/npm/mirror-npmjs.org-npm/clean-css/-/clean-css-4.2.4.tgz#733bf46eba4e607c6891ea57c24a989356831178"
@@ -9664,6 +9669,11 @@ sanitize.css@^10.0.0:
   version "10.0.0"
   resolved "https://artifacts.radarservices.net:443/api/npm/mirror-npmjs.org-npm/sanitize.css/-/sanitize.css-10.0.0.tgz#b5cb2547e96d8629a60947544665243b1dc3657a"
   integrity sha1-tcslR+lthimmCUdURmUkOx3DZXo=
+
+sanitize.css@^13.0.0:
+  version "13.0.0"
+  resolved "https://artifacts.radarservices.net:443/api/npm/mirror-npmjs.org-npm/sanitize.css/-/sanitize.css-13.0.0.tgz#2675553974b27964c75562ade3bd85d79879f173"
+  integrity sha1-JnVVOXSyeWTHVWKt472F15h58XM=
 
 sass-loader@^10.0.5:
   version "10.2.0"
